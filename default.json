@@ -13,7 +13,7 @@
         "Jenkinsfile"
       ],
       "matchStrings": [
-        "deployHelmChart\\s*{[\\s\\S]*chartName\\s*=\\s*[\\\"'](?<chartName>.+)[\\\"'][\\s\\S]*chartVersion\\s*=\\s*[\\\"'](?<currentValue>.+)[\\\"'][\\s\\S]*chartRepo\\s*=\\s*[\\\"'](?<chartRepo>.+)[\\\"']"
+        "deployHelmChart\\s*{\\s|.*chartName\\s*=\\s*[\\\"'](?<chartName>.+)[\\\"']\\s|.*chartVersion\\s*=\\s*[\\\"'](?<currentValue>.+)[\\\"']\\s|.*chartRepo\\s*=\\s*[\\\"'](?<chartRepo>.+)[\\\"']"
       ],
       "depNameTemplate": "my-host/artifactory/{{{chartRepo}}}/{{{chartName}}}",
       "versioningTemplate": "semver",
