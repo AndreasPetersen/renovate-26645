@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'io.quarkus'
+    id("org.sonarqube") version "4.2.0.3129"
 }
 
 repositories {
