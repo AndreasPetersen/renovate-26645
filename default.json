@@ -6,5 +6,5 @@
     "mergeConfidence:all-badges"
   ],
   "prHourlyLimit": 20,
-  "commitMessagePrefix": "{{{depType}}}"
+  "prBodyNotes": "depType: {{{depType}}}"
 }
