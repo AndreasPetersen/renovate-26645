@@ -5,19 +5,5 @@
     "config:best-practices",
     "mergeConfidence:all-badges"
   ],
-  "customManagers": [
-    {
-      "description": "Jenkinsfile deployHelmChart",
-      "customType": "regex",
-      "fileMatch": [
-        "Jenkinsfile"
-      ],
-      "matchStrings": [
-        "deployHelmChart\\s*{\\s|.*chartName\\s*=\\s*[\\\"'](?<chartName>.+)[\\\"']\\s|.*chartVersion\\s*=\\s*[\\\"'](?<currentValue>.+)[\\\"']\\s|.*chartRepo\\s*=\\s*[\\\"'](?<chartRepo>.+)[\\\"']"
-      ],
-      "depNameTemplate": "my-host/artifactory/{{{chartRepo}}}/{{{chartName}}}",
-      "versioningTemplate": "semver",
-      "datasourceTemplate": "helm"
-    }
-  ]
+  "commitMessagePrefix": "{{{depType}}}"
 }
